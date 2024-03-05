@@ -1,0 +1,57 @@
+.container {
+    width: 400px;
+}
+
+.pic, .info, .but {
+    height: 100px;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.pic {
+    padding-left: 5px;
+}
+
+.info {
+    padding-right: 100px;
+}
+
+.rill-pic {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.but {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.name, .type, .title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.type, .title {
+    opacity: 80%;
+}
+
+p {
+    font-family: arial;
+}
+
+button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgb(83, 83, 248);
+    color: white;
+}

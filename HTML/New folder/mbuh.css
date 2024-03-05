@@ -1,0 +1,18 @@
+.Subscribe-button{
+    background-color: white;
+    color: black;
+    height: 45px;
+    width: 100px;
+    border-width: 1px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.Subscribe-button :hover {
+    background-color: opacity 10%;
+}
+
+.Subscribe-button :active {
+    background-color: black;
+    color: white;
+}

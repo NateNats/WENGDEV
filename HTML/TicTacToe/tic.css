@@ -1,0 +1,52 @@
+* {
+    font-family: 'Montserrat';
+}
+
+.games {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    text-align: center;
+}
+.cell {
+    cursor: pointer;
+    font-family: "permanent marker", cursive;
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    box-shadow: 0 0 0 2px;
+}
+
+.restartBtn {
+    cursor: pointer;
+    background: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.restartBtn:hover {
+    background: rgba(107, 107, 107, 0.2);
+}
+
+.restartBtn:active {
+    background: rgba(0, 0, 0, 0.2);
+}

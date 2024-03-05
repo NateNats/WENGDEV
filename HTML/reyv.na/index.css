@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body, html {
+  background: #fff;
+  color: #000;
+  height: 100%;
+  width: 100%;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: purple;
+}
+
+.navbar .navbar-nav a::after {
+  content: ' ';
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: 1.6px solid purple;
+  transform: scaleX(0);
+  transition: 0.5s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.2s linear;
+}
+/*---navbar---*/
+
+/* home */
+#home {
+  height: 100%;
+  width: 100%;
+}
+#home .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-tulisan {
+  font-size: 40px;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/*---home---*/
+
+/* about */
+#about {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#about .container1 {
+  height: 100%;
+  width: 40%;
+}
+
+#about .container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#about .container1 .item-1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#about .container2 {
+  width: 60%;
+  height: 100%;
+}
+
+#about .container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+#about .container2 h1{
+  font-size: 64px;
+}
+
+.item-1, .item-2, .item-3 {
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.item-1 {
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  align-items: center;
+}
+
+.item-2{
+  height: 15%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.item-3 {
+  border: 2px solid red;
+  height: 75%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+/*---about---*/
+
+/*project*/
+#project {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#project .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.judul {
+  text-align: center;
+  align-items: end;
+  border-radius: 5px;
+}
+
+.hasil {
+  border: 2px solid black;
+  text-align: center;
+  align-items: end;
+  border-radius: 5px;
+}
+
+.judul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  font-size: 40px;
+}
+
+.pilihan {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 10%;
+}
+
+.pilihan .tombol a{
+  border-radius: 20px;
+  padding: 10px 16px;
+  color: black;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.pilihan .tombol a:hover{
+  color: purple;
+}
+
+.hasil {
+  width: 100%;
+  height: 70%;
+}
+
+/*---project---*/
+
+/* contact */
+#contact {
+  height: 100%;
+  width: 100%;
+}
+
+#contact .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact .container img {
+  width: 150px;
+}
+/*---contact---*/
+
+/* Media quaries */
+
+/* Laptop */
+
+/* Tablet */
+ 
+/* hp */

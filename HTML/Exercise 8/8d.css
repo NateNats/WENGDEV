@@ -1,0 +1,73 @@
+div {
+    display: inline-block;
+}
+
+.d {
+    margin-right: 100px;
+}
+
+.first, .last, .email {
+    padding-left: 10px;
+    border-radius: 5px;
+    height: 30px;           
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+}
+
+.first, .last {
+    width: 120px;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.email {
+    width: 258px;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.sign-up {
+    border-radius: 5px;
+    background-color: rgb(47, 127, 231);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 271px;
+}
+
+/* beda block */
+
+p {
+    font-family: arial;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.location, .destination {
+    font-size: 15px;
+    padding-left: 10px;
+    height: 50px;
+    width: 400px;
+    margin: 5px;
+    display: block;
+    border: none;
+    background-color: rgb(240, 240, 240);
+}
+
+.request, .sch {
+    display: inline-block;
+    border: none;
+    height: 50px;
+    width: 150px;
+    font-weight: 600;
+}
+
+.request {
+    background-color: black;
+    color: white;
+    margin-left: 5px;
+    margin-right: 10px;
+}

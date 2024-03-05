@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table form</title>
+</head>
+<body>
+    <table border="1" cellpadding="4" cellspasing="0">
+        <tbody>
+            <tr>
+                <td>
+                    <form>
+                        <label for="username">Username</label>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <input id="username" type="text">
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <form>
+                        <label for="password">Password</label>
+                    </form>
+                </td>
+                <td>
+                    <input id="password" type="password" name="password">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <form>
+                        <label>
+                            <input type="radio" name="option" value="pilihan 1 dipilih" onchange="updateValue()">pilihan 1
+                        </label>
+
+                        <label>
+                            <input type="radio" name="option" value="pilihan 2 dipilih" onchange="updateValue()">pilihan 2
+                        </label>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <textarea id="myText" style="width: 300px; height:40px"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <form>
+                        <label for="combo">Combobox</label>
+                    </form>
+                </td>
+                <td>
+                    <select>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <center>
+                        <button>OK</button>
+                    </center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<script>
+    function updateValue() {
+        var selectedoption = document.querySelector('input[name="option"]:checked').value;
+        document.getElementById('myText').value = selectedoption;
+    }
+</script>
+
+</html>

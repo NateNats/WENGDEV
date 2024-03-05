@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatau</title>
+</head>
+
+<style>
+  .btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .home {
+    border-color: black;
+    color: black;
+    border-radius: 25px;
+  }
+
+  .home:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease-in;
+    transition: color 0.2s ease-in;
+  }
+
+  .info {
+    border-color: black;
+    color: black;
+    border-radius: 25px;
+
+  }
+
+  .info:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease-in;
+    transition: color 0.2s ease-in;
+  }
+
+  .warning {
+    border-color: black;
+    color: black;
+    border-radius: 25px;
+  }
+
+  .warning:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease-in;
+    transition: color 0.2s ease-in;
+  }
+
+  .danger {
+    border-color: black;
+    color: black;
+    border-radius: 25px;
+  }
+
+  .danger:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease-in;
+    transition: color 0.2s ease-in;
+  }
+
+  .default {
+    border-color: black;
+    color: black;
+    border-radius: 25px;
+  }
+
+  .default:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease-in;
+    transition: color 0.2s ease-in;
+  }
+
+  .pembukaan {
+    position: relative;
+  }
+</style>
+
+<body>
+  <nav>
+    <button class="btn home">Home</button>
+    <button class="btn info">Info</button>
+    <button class="btn warning">Warning</button>
+    <button class="btn danger">Danger</button>
+    <button class="btn default">Default</button>
+  </nav>
+
+  <section>
+    <img class="image" src="image1.jpg" alt="MyImage1" style="width: 100%">
+    <img class="image" src="image2.jpg" alt="MyImage2" style="width: 100%">
+    <img class="image" src="image3.png" alt="MyImage3" style="width: 100%">
+    <img class="image" src="image4.png" alt="MyImage4" style="width: 100%">
+  </section>
+
+  <section class="desc">
+    <h2 class="pembukaan">WELCOME TO MY WEBSITE</h2>
+
+    <p>Hi, my name is Nicolaus Reva S.
+      im study in Sanata Dharma university, majoring Engineering Informatics.
+
+    </p>
+  </section>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("image");
+      for (i = 0; i < x.length; i++) { x[i].style.display = "none"; } myIndex++; if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 1000);
+    }
+  </script>
+</body>
+
+</html>

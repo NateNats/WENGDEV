@@ -1,0 +1,60 @@
+.full {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.video-card {
+    width: 400px;
+}
+
+.video-preview {
+    width: 400px;
+}
+
+.tumbnail {
+    border-radius: 20px;
+    width: 400px;
+}
+
+.title {
+    width: 300px;
+}
+
+.channel-name {
+    width: 300px;
+}
+
+.views-count {
+    width: 300px;
+}
+
+.channel-pic {
+    width: 40px;
+    padding-top: 0px;
+    margin-top: 0px;
+    border-radius: 50%;
+}
+
+.channel {
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.title {
+    margin-top: 0px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.channel, .video-info {
+    display: inline-block;
+}
+
+.info {
+    width: 400px;
+    text-align: start;
+}
+
+.info-contain {
+    margin-top: 10px;
+}

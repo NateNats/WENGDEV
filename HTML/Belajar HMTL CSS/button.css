@@ -1,0 +1,128 @@
+:root {
+    --join-color: 49, 100, 189; 
+    --twt-color: 29, 161, 242;
+    --amazon-color: 255,219,88;
+    --bt-color1: 121, 82, 179;
+    --bt-color2: 108, 117, 125;
+}
+
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.subs-button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: opacity 1s;
+}
+
+.subs-button:hover {
+    opacity: 70%;
+}   
+
+.subs-button:active {
+    opacity: 50%;
+}
+
+.join-button {
+    background-color:white;
+    color: rgb(var(--join-color));
+    font-size: 20px;
+    border-color: rgb(var(--join-color));
+    border-width: 1.5px;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 1s, color 1s;
+}
+
+.join-button:hover {
+    background-color: rgb(49, 100, 189);
+    color: white;
+}
+
+.tweet-button {
+    background-color: rgb(var(--twt-color));
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-color: rgb(var(--twt-color));
+    border: none;
+    border-radius: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: box-shadow 0.15s;
+}
+
+.tweet-button:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.uber-button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.amazon-button {
+    background-color: rgb(var(--amazon-color));
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 18px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.amazon-button:hover {
+    background-color: rgb(255, 200, 0);
+}
+
+.bootstrap-button1 {
+    background-color: rgb(var(--bt-color1));
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.bootstrap-button2 {
+    background-color: white; 
+    color: rgb(var(--bt-color2));
+    font-size: 15px;
+    font-weight: bold;
+    border-color: rgb(var(--bt-color2));
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
