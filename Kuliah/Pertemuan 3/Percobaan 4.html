@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Percobaan 4</title>
+
+  <script>
+
+    let selectedOperator;
+
+    const calculate = () => {
+      const operator = selectedOperator;
+      const result = curriedOperator('bilangan1')('bilangan2')(selectedOperator);
+    }
+
+    const curriedOperator = (elementId1) => (elementId2) => (operator) => {
+      const bil1 = parseInt(document.getElementById(elementId1).value);
+      const bil2 = parseInt(document.getElementById(elementId2).value);
+
+      switch (selectedOperator) {
+        case '+':
+          return bil1 + bil2;
+
+        case '-':
+          return bil1 - bil2;
+      }
+    }
+
+  const setOperator = (operator) => {
+      selectedOperator = operator;
+  }
+
+  </script>
+</head>
+
+<body>
+  <H1>kalkulator Tambah/Kurang</H1>
+  <form action="#" style="display: block">
+    <label for="bilangan1">Bilangan 1</label>
+    <input type="text" id="bilangan1" />
+    <br>
+    <label for="bilangan2">Bilangan 2</label>
+    <input type="text" id="bilangan2" />
+    <br>
+    <input type="button" value="Tambah" onclick="setOperator('+'); calculate();" />
+    <input type="button" value="kurang" onclick="setOperator('-'); calculate();" />
+    <br>
+    <label for="hasil">hasil</label>
+    <input type="text" id="hasil" />
+
+    <h1>Nicolaus Reva S</h1>
+  </form>
+</body>
+</html>
+

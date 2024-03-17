@@ -1,3 +1,42 @@
+@keyframes fadeAll {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes kiri {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.infinite {
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes kanan {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -82,7 +121,19 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+}
+
+.tengah, .logo, .navbar-nav a {
+  animation: fadeAll 3s;
+}
+.kiri {
+
+  animation: kiri 3s;
+}
+
+
+.kanan {
+  animation: kanan 3s;
 }
 
 /*---home---*/
@@ -146,10 +197,10 @@ body, html {
 }
 
 .item-3 {
+  padding: 20px 30px;
   border: 2px solid red;
   height: 75%;
   width: 100%;
-  text-align: center;
   align-items: center;
 }
 

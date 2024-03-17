@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>perkenalan diri</title>
+</head>
+    <style>
+
+        @keyframes fadeAll {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        * {
+            animation: fadeAll 2s;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat',serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: block;
+            background-image: url("bg.jpg");
+            justify-content: center;
+            align-items: center;
+        }
+
+        H1, H2, H3, H4 {
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .profile {
+            width: 450px;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .perkenalan {
+            justify-content: center;
+            display: block;
+            padding: 20px 20px 20px 20px;
+            border-radius: 20px;
+            width: 600px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 50px 5px #48abe0;
+            margin-bottom: 20px;
+        }
+
+        .asal img {
+            cursor: pointer;
+            transition-property: transform;
+            transition-duration: 0.5s;
+        }
+
+        .asal img:hover {
+            transform: translateY(-10px);
+        }
+
+        .jadwal {
+            margin-top: 40px;
+            display: block;
+            vertical-align: center;
+            width: 75%;
+            justify-content: center;
+        }
+
+        .contact-me {
+            height: 100%;
+            width: 100%;
+        }
+
+        .contact-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .contact-container img {
+            width: 150px;
+        }
+
+        form {
+            display: block;
+        }
+
+        .instagram img {
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+
+        .fb img {
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+
+        .wa img {
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+
+        .instagram img:hover {
+            transform: translateY(-10px);
+        }
+
+        .fb img:hover {
+            transform: translateY(-10px);
+        }
+
+        .wa img:hover {
+            transform: translateY(-10px);
+        }
+
+    </style>
+
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <H1 style="font-size: 30px; color: white">My Little Biography.</H1>
+            <div class="image">
+                <img class="fotoprofil" src="fotoprofil.jpg" alt="foto profile" style="border-radius: 40px; width: 400px">
+            </div>
+        </div>
+
+        <div class="perkenalan">
+            <p>Nama saya Nicolaus Reva Sagraha, teman-teman saya lebih sering memanggil saya Reva. Saya Lahir di Temanggung pada 27 Januari 2004.
+                Saya memilih Sanata Dharma sebagai tempat belajar saya karena saya telah ditolak PTN beberapa kali.
+                Saya tertarik pada dunia Machine Learning, 3D visual dan permusikan. Saya lebih sering menghabiskan waktu saya untuk bermain game.
+                Saya mulai belajar bahasa pemrograman sejak saya pertama kali masuk dunia perkuliahan.</p>
+        </div>
+        
+        <div class="asal">
+            <a href="https://maps.app.goo.gl/cEuimMcGc5NR386V7" target="_blank">
+                <img src="asal-saya.png" alt="" style="border-radius: 20px">
+            </a>
+        </div>
+        
+        <div class="jadwal">
+            <h4>Game yang telah saya mainkan</h4>
+
+            <table border="5px" cellspacing="2" cellpadding="8" width="100%">
+                <tr>
+                    <th style="text-align: center; background-color: rgba(80, 196, 237, 0.5)">No.</th>
+                    <th style="background-color: rgba(80, 196, 237, 0.5)">Games</th>
+                    <th style="background-color: rgba(80, 196, 237, 0.5)">Status</th>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">1.</td>
+                    <td bgcolor="#ffffff">Call Of Duty: Black Ops</td>
+                    <td style="text-align: center; background-color: #ffffff">Tamat</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">2.</td>
+                    <td bgcolor="#ffffff">Call Of Duty: Black Ops 2</td>
+                    <td style="text-align: center; background-color: #ffffff">Tamat</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">3.</td>
+                    <td bgcolor="#ffffff">Call Of Duty: Modern Warfare</td>
+                    <td style="text-align: center; background-color: #ffffff">Belum Tamat</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">4.</td>
+                    <td bgcolor="#ffffff">Call Of Duty: Modern Warfare 2 </td>
+                    <td style="text-align: center; background-color: #ffffff">Tamat</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">5.</td>
+                    <td bgcolor="#ffffff">Call Of Duty: Modern Warfare 3</td>
+                    <td style="text-align: center; background-color: #ffffff">Tamat</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">6.</td>
+                    <td bgcolor="#ffffff">Resident Evil 2: Remake</td>
+                    <td style="text-align: center; background-color: #ffffff">Tamat</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">7.</td>
+                    <td bgcolor="#ffffff">Resident Evil 3: Remake</td>
+                    <td style="text-align: center; background-color: #ffffff">Tamat</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">8.</td>
+                    <td bgcolor="#ffffff">Resident Evil 5</td>
+                    <td style="text-align: center; background-color: #ffffff">Tamat</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">9.</td>
+                    <td bgcolor="#ffffff">Resident Evil 6</td>
+                    <td style="text-align: center; background-color: #ffffff">Tamat</td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff">10.</td>
+                    <td bgcolor="#ffffff">Resident Evil 7</td>
+                    <td style="text-align: center; background-color: #ffffff">Tamat</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contact-me" style="margin-top: 20px; margin-bottom: 40px">
+            <div class="contact-container">
+                <h1>Contact Me on: </h1>
+
+                <div class="instagram">
+                    <a href="https://www.instagram.com/nicolarevaa/" target='_blank'>
+                        <img src="ig.png">
+                    </a>
+                </div>
+
+                <div class="wa">
+                    <a href="wa.me/+6281226833400" target="_blank">
+                        <img src="wa.png">
+                    </a>
+                </div>
+
+                <div class="fb">
+                    <a href="https://www.facebook.com/nicolaus.reva1" target="_blank">
+                        <img src="fb.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
